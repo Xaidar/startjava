@@ -9,17 +9,17 @@ public class Cycle {
         int x = 6;
         while (x >= -6) {
             System.out.print(x + "; ");
-            x = x - 2;
+            x -= 2;
         }
 
         int j = 10;
         int sum = 0;
         do {
-            if (j%2 != 0) {
+            if (j % 2 != 0) {
                 sum = sum + j;
             }
-            j = j + 1;
-        } while (j < 20);
+            j += 1;
+        } while (j <= 20);
         System.out.println("\nCумма всех нечетных чисел от [10, 20]: " + sum);
     }
 }

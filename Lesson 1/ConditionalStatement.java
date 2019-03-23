@@ -2,7 +2,6 @@ public class ConditionalStatement {
     public static void main(String[] args) {
         int age = 25;
         boolean isMale = true;
-        boolean isFemale = false;
         double growth = 1.85;
         String name = "Xaidar";
 
@@ -14,7 +13,7 @@ public class ConditionalStatement {
             System.out.println("Ваш пол мужской");
         }
 
-        if (isFemale) {
+        if (!isMale) {
             System.out.println("Ваш пол женский");
         }
 
