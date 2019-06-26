@@ -1,8 +1,8 @@
-package src.com.startjava.lesson_2_3.calculator;
+package com.startjava.lesson_2_3_4.calculator;
 
 import java.util.Scanner;
 
-public class CalculatorTest { 
+public class CalculatorTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Calculator calc = new Calculator();
