@@ -14,13 +14,13 @@ class GuessNumber {
         playerTwo.inputName();
 
         while (answer.equals("да")) {
-            int rndNumber = (int) (Math.random() * 3);
+            int rndNumber = (int) (Math.random() * 10);
 
             playerOne.clearNumberArr();
             playerTwo.clearNumberArr();
 
-            if (!(playerOne.play(3))) {
-                playerTwo.play(3);
+            if (!(playerOne.play(rndNumber))) {
+                playerTwo.play(rndNumber);
             }
 
             System.out.println("Числа, которые ввел " + playerOne.toString());

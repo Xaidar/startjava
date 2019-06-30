@@ -20,13 +20,15 @@ public class Player {
         System.out.print(name + ", у вас 10 попыток: ");
 
         int counter = 0;
+        isWin = false;
 
-        for (int i = 0; i < 10 && !isWin; i++) {
+        for (int i = 0; i < numberArr.length && !isWin; i++) {
             numberArr[i] = scanner.nextInt();
+            counter++;
             if (numberArr[i] == rndNumber) {
                 isWin = true;
+                break;
             }
-            counter++;
         }
 
         if (isWin) {
@@ -63,12 +65,12 @@ public class Player {
     }
 
     public void clearNumberArr() {
-        for (int number: numberArr) {
-            if (number != 0) {
-                Arrays.fill(numberArr, number, number, 0);
+        for (int i=0; i<numberArr.length; i++) {
+            if (numberArr[i] != 0) {
+                Arrays.fill(numberArr, i, i+1, 0);
             }
-            System.out.print(numberArr[number] + "; ");
         }
+
     }
 
     @Override
